@@ -13,18 +13,22 @@ public class ArrayExercises
     {
         for(int value : values)
         {
-            System.out.println(value);
+            System.out.println("{ " + value + " }");
         }
     }
-    private static int arrayTotal(int[] values)
+    private static void arrayTotal(int[] values)
     {
         int total = 0;
         for(int i = 0; i < values.length; i++)
         {
             total += values[i];
-            System.out.println("The running total of the array is: " + total);
         }
-        return total;
+        System.out.println("The sum of elements: " + total);
+
 
     }
+//    private static int arrayMax(int[] vaules)
+//    {
+//
+//    }
 }
