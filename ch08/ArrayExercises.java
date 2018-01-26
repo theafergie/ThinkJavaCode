@@ -13,6 +13,9 @@ public class ArrayExercises
 
         int eightD[] = {1, 5, 9, 50, 100};
         arrayMaxIndex(eightD);
+
+        double eightE[] = {1.0, 1.0, 5.0, 6.0, 3.0};
+        arrayAverage(eightE);
     }
 
     private static void printArray(int[] values)
@@ -22,6 +25,7 @@ public class ArrayExercises
             System.out.print(value);
         }
     }
+
     private static void arrayTotal(int[] values)
     {
         int total = 0;
@@ -31,6 +35,7 @@ public class ArrayExercises
         }
         System.out.println("\nThe sum of elements: " + total);
     }
+
     private static void arrayMax(int[] values)
     {
         int max = values[0];
@@ -56,5 +61,15 @@ public class ArrayExercises
             }
         }
         System.out.println("Index " + index + " holds the highest value element.");
+    }
+
+    private static void arrayAverage(double[] values)
+    {
+        double average = 0.0;
+        for(double i = 0.0; i < values.length; i++)
+        {
+            average += values[(int) i] / values.length;
+        }
+        System.out.println("arrayAverage is: " + average);
     }
 }
