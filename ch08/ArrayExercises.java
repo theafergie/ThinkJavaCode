@@ -10,6 +10,9 @@ public class ArrayExercises
 
         int eightC[] = {10,40,15,2};
         arrayMax(eightC);
+
+        int eightD[] = {1, 5, 9, 50, 100};
+        arrayMaxIndex(eightD);
     }
 
     private static void printArray(int[] values)
@@ -40,5 +43,18 @@ public class ArrayExercises
             }
         }
         System.out.println("Max number is: " + max);
+    }
+    private static void arrayMaxIndex(int[] values)
+    {
+        int index = values[0];
+
+        for(int i = 0; i < values.length; i++)
+        {
+            if(values[i] > index)
+            {
+                index = i;
+            }
+        }
+        System.out.println("Index " + index + " holds the highest value element.");
     }
 }
