@@ -21,6 +21,9 @@ public class MyStringExercises
 
         printPhoneNumber("501-555-0100");
 
+        findFirstE("Hello");
+        findFirstE("Goodbye");
+
 
     }
 
@@ -62,6 +65,14 @@ public class MyStringExercises
     {
         System.out.println("Area Code: " + phoneNumber.substring(0, 3));
         System.out.println("Exchange: " + phoneNumber.substring(4, 7));
-        System.out.println("Line Number: " + phoneNumber.substring(8,12));
+        System.out.println("Line Number: " + phoneNumber.substring(8, 12));
+    }
+
+    private static void findFirstE(String firstE)
+    {
+        int index = firstE.indexOf('e');
+
+        System.out.println(index);
+        System.out.println(index);
     }
 }
