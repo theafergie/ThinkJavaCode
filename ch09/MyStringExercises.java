@@ -16,6 +16,9 @@ public class MyStringExercises
         printAllButFirstThree("Hello");
         printAllButFirstThree("Goodbye");
 
+        printFirstThree("Hello");
+        printFirstThree("Goodbye");
+
 
     }
 
@@ -45,6 +48,11 @@ public class MyStringExercises
 
     private static void printAllButFirstThree(String after)
     {
-        System.out.println(after.substring(2));
+        System.out.println(after.substring(3));
+    }
+
+    private static void printFirstThree(String before)
+    {
+        System.out.println(before.substring(0,3));
     }
 }
