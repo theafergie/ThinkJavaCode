@@ -1,5 +1,6 @@
 public class MyStringExercises
 {
+
     public static void main(String[] args){
 
         printFirstCharacter("Hello");
@@ -7,6 +8,8 @@ public class MyStringExercises
 
         printLastCharacter("Hello");
         printLastCharacter("Goodbye");
+
+        printCharacters("Hello");
 
     }
 
@@ -21,5 +24,16 @@ public class MyStringExercises
         int length = last.length();
         System.out.println("Print the last character in " + last);
         System.out.println(last.charAt(length - 1));
+    }
+
+    public static void printCharacters(String allCharacters)
+    {
+        System.out.println("Print each character and position");
+
+        for (int i = 0; i < allCharacters.length(); i++)
+        {
+            char letter = allCharacters.charAt(i);
+            System.out.println("The letter " + letter + " is at the index " + i);
+        }
     }
 }
