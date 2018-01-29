@@ -24,6 +24,9 @@ public class MyStringExercises
         findFirstE("Hello");
         findFirstE("Goodbye");
 
+        isFinn("Finn");
+        isFinn("Jake");
+
 
     }
 
@@ -74,5 +77,22 @@ public class MyStringExercises
 
         System.out.println(index);
         System.out.println(index);
+    }
+
+    private static boolean isFinn(String hasFinn)
+    {
+        boolean finn = false;
+
+        if (hasFinn.contentEquals("Finn"))
+        {
+            finn = true;
+            System.out.println(finn);
+        }
+        else
+        {
+            finn = false;
+            System.out.println(finn);
+        }
+        return finn;
     }
 }
