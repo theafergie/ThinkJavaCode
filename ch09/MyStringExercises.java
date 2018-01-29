@@ -10,6 +10,12 @@ public class MyStringExercises
         printLastCharacter("Goodbye");
 
         printCharacters("Hello");
+        printCharacters("Goodbye");
+
+
+        printAllButFirstThree("Hello");
+        printAllButFirstThree("Goodbye");
+
 
     }
 
@@ -26,7 +32,7 @@ public class MyStringExercises
         System.out.println(last.charAt(length - 1));
     }
 
-    public static void printCharacters(String allCharacters)
+    private static void printCharacters(String allCharacters)
     {
         System.out.println("Print each character and position");
 
@@ -35,5 +41,10 @@ public class MyStringExercises
             char letter = allCharacters.charAt(i);
             System.out.println("The letter " + letter + " is at the index " + i);
         }
+    }
+
+    private static void printAllButFirstThree(String after)
+    {
+        System.out.println(after.substring(2));
     }
 }
