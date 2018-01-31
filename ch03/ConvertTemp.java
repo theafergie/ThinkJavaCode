@@ -5,16 +5,16 @@ public class ConvertTemp
     public static void main(String[] args)
     {
 
-        double f;
+        double c;
 
         Scanner in = new Scanner(System.in);
 
         System.out.print("How many Celsius: ");
-        f = in.nextDouble();
+        c = in.nextDouble();
 
-        double fahrenheit = f * 9 / 5 + 32;
+        double fahrenheit = c * 9 / 5 + 32;
 
-        System.out.print(f);
+        System.out.print(c);
         System.out.print(" C = ");
         System.out.print(fahrenheit);
         System.out.println(" F");

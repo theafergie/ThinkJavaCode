@@ -21,7 +21,8 @@ public class EdsWholesaleStringCheese
         int oneInch = (2 * yards) + (2 * yards) + handlingCharge;
         int twoInch = (4 * yards) + (2 * yards) + handlingCharge;
         int threeInch = (6 * yards) + (4 * yards) + handlingCharge;
-        int freeShip = 2 * yards;
+        int freeShip1 = 2 * yards;
+        int freeShip2 = 2 * yards;
         int freeShip3 = 4 * yards;
 
         if (order == 1 && yards <= 50)
@@ -32,7 +33,7 @@ public class EdsWholesaleStringCheese
         else if (order == 1 && yards > 50)
         {
             System.out.println("$2/yd with FREE shipping!");
-            System.out.println("Your total delivery charge with FREE shipping is $" + (oneInch - freeShip));
+            System.out.println("Your total delivery charge with FREE shipping is $" + (oneInch - freeShip1));
         }
         else if (order == 2 && yards <= 75)
         {
@@ -42,7 +43,7 @@ public class EdsWholesaleStringCheese
         else if (order == 2 && yards > 75)
         {
             System.out.println("$4/yd with FREE shipping!");
-            System.out.println("Your total delivery charge with FREE shipping is $" + (twoInch - freeShip));
+            System.out.println("Your total delivery charge with FREE shipping is $" + (twoInch - freeShip2));
 
         }
         else if (order == 3 && yards <=25)

@@ -34,3 +34,8 @@ public class Exercise {
     }
 
 }
+    /*
+    System.out.println();
+
+            boolean isATriangle = isTriangle(12, 6, 6);
+            System.out.println(isATriangle); */

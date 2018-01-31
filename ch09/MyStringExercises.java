@@ -20,6 +20,7 @@ public class MyStringExercises
         printFirstThree("Goodbye");
 
         printPhoneNumber("501-555-0100");
+        printPhoneNumber("501-867-5309");
 
         findFirstE("Hello");
         findFirstE("Goodbye");
@@ -66,6 +67,11 @@ public class MyStringExercises
 
     private static void printPhoneNumber(String phoneNumber)
     {
+
+        //Best to create variables instead of all in print line.
+        //String areaCode = phoneNumber.substring(0,3);
+        //System.out.println("Area Code: " + areaCode);
+
         System.out.println("Area Code: " + phoneNumber.substring(0, 3));
         System.out.println("Exchange: " + phoneNumber.substring(4, 7));
         System.out.println("Line Number: " + phoneNumber.substring(8, 12));
@@ -76,13 +82,14 @@ public class MyStringExercises
         int index = firstE.indexOf('e');
 
         System.out.println(index);
-        System.out.println(index);
+        //System.out.println(index);
     }
 
     private static boolean isFinn(String hasFinn)
     {
         boolean finn = false;
 
+        //if (name.equals("Finn"))
         if (hasFinn.contentEquals("Finn"))
         {
             finn = true;

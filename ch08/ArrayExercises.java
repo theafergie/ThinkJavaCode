@@ -11,7 +11,7 @@ public class ArrayExercises
         int eightC[] = {10,40,15,2};
         arrayMax(eightC);
 
-        int eightD[] = {1, 5, 9, 50, 100};
+        int eightD[] = {1, 5, 9, 50, 10};
         arrayMaxIndex(eightD);
 
         double eightE[] = {1.0, 1.0, 5.0, 6.0, 3.0};
@@ -51,16 +51,16 @@ public class ArrayExercises
     }
     private static void arrayMaxIndex(int[] values)
     {
-        int index = values[0];
+        int maxValueIndex = 0;
 
         for(int i = 0; i < values.length; i++)
         {
-            if(values[i] > index)
+            if(values[i] > values[maxValueIndex])
             {
-                index = i;
+                maxValueIndex = i;
             }
         }
-        System.out.println("Index " + index + " holds the highest value element.");
+        System.out.println("Index " + maxValueIndex + " holds the highest value element.");
     }
 
     private static void arrayAverage(double[] values)
