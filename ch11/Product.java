@@ -3,7 +3,7 @@ public class Product
     private String name;
     private int quantityInStock;
 
-    public Product()
+    public Product(String name)
     {
         name = "Honeysuckle-Strawberry Jelly";
     }
