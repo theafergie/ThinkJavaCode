@@ -1,9 +1,9 @@
 public class Player
 {
-    String name;
-    int score;
+    private String name;
+    private int score;
 
-    public Player()
+    public Player(String name)
     {
         name = "Player 1";
         score = 0;
