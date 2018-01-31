@@ -1,13 +1,13 @@
 public class Date
 {
-    int day;
-    int month;
-    int year;
+    private int day;
+    private int month;
+    private int year;
 
-    public Date()
+    public Date(int day, int month, int year)
     {
-       day = 0;
-       month = 0;
-       year = 0;
+       this.day = 31;
+       this.month = 1;
+       this.year = 2018;
     }
 }
