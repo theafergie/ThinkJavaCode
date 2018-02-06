@@ -17,11 +17,7 @@ public class ShoppingList
 
 
         do {
-            System.out.println("Enter Add to add item, " +
-                    "Print to print list, " +
-                    "Remove to remove, " +
-                    "Clear to clear list, " +
-                    "Sort or Exit");
+            System.out.println("Enter Command(Add, Print, Remove, Clear, Sort, Find or Exit");
 
             command = in.nextLine();
 
@@ -47,6 +43,11 @@ public class ShoppingList
             else if (command.equalsIgnoreCase("Sort"))
             {
                 sort();
+                printList(addToList);
+            }
+            else if (command.equalsIgnoreCase("Find"))
+            {
+                find();
             }
             else
             {
@@ -103,6 +104,19 @@ public class ShoppingList
     private void sort()
     {
         Collections.sort(addToList);
+    }
+    private void find()
+    {
+        System.out.println("Enter item to be searched: ");
+        String findItem = in.nextLine();
+        if(addToList.contains(findItem))
+        {
+            System.out.println("Found it!");
+        }
+        else
+        {
+            System.out.println("No such item!");
+        }
     }
 
     public static void main(String[] args)
