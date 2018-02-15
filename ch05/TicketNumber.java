@@ -1,4 +1,3 @@
-import java.awt.*;
 import java.util.Scanner;
 
 public class TicketNumber
@@ -15,13 +14,14 @@ public class TicketNumber
         lastDigit = ticketNumber % 10;
         System.out.println("lastDigit: " + lastDigit);
 
-        int ticketPrefix = ticketNumber - (lastDigit * 10);
+        int ticketPrefix = (ticketNumber - lastDigit) / 10;
         System.out.println("ticketPrefix: " + ticketPrefix);
 
         int remainder = ticketPrefix % 7;
         System.out.println("Remainder is: " + remainder);
 
-        if (remainder == lastDigit)
+        boolean result = remainder == lastDigit;
+        if (result)
         {
             System.out.println("Good Number");
         }
